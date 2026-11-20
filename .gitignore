@@ -11,3 +11,7 @@ Thumbs.db
 
 # Dependencies (if you ever add npm)
 node_modules/
+# Cloudflare build output and local state
+dist/
+.wrangler/
+.dev.vars

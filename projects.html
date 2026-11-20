@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Thindisa Karabo Alfred</title>
-  <meta name="description" content="Projects built by Thindisa Karabo Alfred — software applications and systems." />
+  <meta name="description" content="Projects built by Thindisa Karabo Alfred — client platforms built under Neuropulse Inc., internship systems and personal software projects." />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -32,37 +32,86 @@
   <div class="mobile-menu" id="mobile-menu">
     <a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="experience.html">Experience</a><a href="contact.html">Contact</a>
   </div>
-  
-<div class="page-head"><div class="container reveal"><div class="section-label">03. Projects</div><h1 class="section-title">Things I've <span class="gradient-text">built</span></h1><p class="lead">A selection of projects I've designed, built, and deployed.</p></div></div>
-<section style="padding-top:40px;"><div class="container"><div class="projects-grid"><article class="project-card reveal" data-delay="1">
-      <div class="project-thumb has-image"><img src="assets/images/project-lvh.png" alt="LVH — Limpopo Varsity Hackathon screenshot"></div>
+
+<div class="page-head"><div class="container reveal"><div class="section-label">03. Projects</div><h1 class="section-title">Things I've <span class="gradient-text">built</span></h1><p class="lead">A selection of projects I've designed, built, and deployed: client work through my studio Neuropulse Inc., systems from my ICEP internship, and personal projects.</p></div></div>
+<section style="padding-top:40px;"><div class="container">
+
+  <!-- Neuropulse Inc.: the studio I founded. Cards built under it carry data-org="neuropulse". -->
+  <div class="np-banner reveal" id="neuropulse">
+    <div class="np-brand">
+      <img class="np-logo np-logo-dark" src="assets/images/neuropulse/logo-horizontal-on-dark.svg" alt="Neuropulse Inc." width="214" height="70" />
+      <img class="np-logo np-logo-light" src="assets/images/neuropulse/logo-horizontal-on-light.svg" alt="Neuropulse Inc." width="214" height="70" />
+    </div>
+    <div class="np-text">
+      <div class="section-label">Founder &amp; Lead Developer</div>
+      <h2>Work built under Neuropulse Inc.</h2>
+      <p>I founded Neuropulse Inc., a software studio in Limpopo that designs, builds and hosts websites, booking systems and web apps for South African businesses. Projects marked <span class="np-inline"><img src="assets/images/neuropulse/logo-icon.svg" alt="" width="14" height="14" />Neuropulse Inc.</span> were built under the studio.</p>
+    </div>
+    <div class="np-actions">
+      <button type="button" class="btn btn-primary" data-filter-jump="neuropulse">View Neuropulse work</button>
+      <a class="btn btn-outline" href="https://neuropulse-inc.karabofelicia24.workers.dev/" target="_blank" rel="noopener">Visit Neuropulse <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a>
+    </div>
+  </div>
+
+  <div class="project-filters reveal" role="group" aria-label="Filter projects by where they were built">
+    <button type="button" class="tab-btn filter-btn active" data-filter="all" aria-pressed="true">All <span class="count"></span></button>
+    <button type="button" class="tab-btn filter-btn" data-filter="neuropulse" aria-pressed="false">Neuropulse Inc. <span class="count"></span></button>
+    <button type="button" class="tab-btn filter-btn" data-filter="internship" aria-pressed="false">ICEP Internship <span class="count"></span></button>
+    <button type="button" class="tab-btn filter-btn" data-filter="personal" aria-pressed="false">Personal <span class="count"></span></button>
+  </div>
+
+  <!-- ✏️ ADD A PROJECT: copy an <article> block. Set data-org to neuropulse, internship or personal, and match the label in .project-org -->
+  <div class="projects-grid"><article class="project-card is-neuropulse reveal" data-org="neuropulse" data-delay="1">
+      <div class="project-thumb has-image"><img src="assets/images/project-ng-printers.png" alt="NG Printers website screenshot" loading="lazy"><span class="project-org org-neuropulse"><img src="assets/images/neuropulse/logo-icon.svg" alt="" width="16" height="16">Neuropulse Inc.</span></div>
+      <div class="project-body">
+        <div class="project-top"><div class="project-links"><a href="https://neuropulse-inc.karabofelicia24.workers.dev/work/ng-printers" aria-label="Read the NG Printers case study on the Neuropulse site" title="Case study" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8m8 4H8m2-8H8"/></svg></a><a href="https://ng-printers.karabofelicia24.workers.dev/" aria-label="Visit live website" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></div><span class="project-status">Deployed</span></div>
+        <h3>NG Printers</h3><div class="project-meta">Client · NG Printers (Creative Designs &amp; Supplies), Polokwane</div><p>A full business platform for a printing and embroidery shop: online quotes with artwork uploads, a customer portal to accept prices and track orders, an admin dashboard for pricing, production and payments, and a 3D map with live directions to the shop.</p>
+        <div class="project-tags"><span>React</span><span>TypeScript</span><span>Node.js</span><span>Prisma</span><span>Cloudflare Workers</span></div>
+      </div>
+    </article><article class="project-card is-neuropulse reveal" data-org="neuropulse" data-delay="2">
+      <div class="project-thumb has-image"><img src="assets/images/project-4guard.jpg" alt="4GUARD website screenshot" loading="lazy"><span class="project-org org-neuropulse"><img src="assets/images/neuropulse/logo-icon.svg" alt="" width="16" height="16">Neuropulse Inc.</span></div>
+      <div class="project-body">
+        <div class="project-top"><div class="project-links"><a href="https://neuropulse-inc.karabofelicia24.workers.dev/work/4guard" aria-label="Read the 4GUARD case study on the Neuropulse site" title="Case study" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8m8 4H8m2-8H8"/></svg></a><a href="https://4guard-booking-portal.karabofelicia24.workers.dev/" aria-label="Visit live website" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></div><span class="project-status">Deployed</span></div>
+        <h3>4GUARD</h3><div class="project-meta">Client · 4Guard Cleaning &amp; Pest Solutions</div><p>A business website for a cleaning and pest-control company, with service pages, customer accounts and an online booking portal where customers pick a service and a date, then follow the job from their account.</p>
+        <div class="project-tags"><span>Cloudflare Workers</span><span>D1</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      </div>
+    </article><article class="project-card is-neuropulse reveal" data-org="neuropulse" data-delay="3">
+      <div class="project-thumb has-image"><img src="assets/images/project-neuropulse.png" alt="Neuropulse Inc. website screenshot" loading="lazy"><span class="project-org org-neuropulse"><img src="assets/images/neuropulse/logo-icon.svg" alt="" width="16" height="16">Neuropulse Inc.</span></div>
+      <div class="project-body">
+        <div class="project-top"><div class="project-links"><a href="https://github.com/KARA3O/Neuropulse-inc" aria-label="GitHub repository" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.69-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.05.78 2.13v3.16c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a><a href="https://neuropulse-inc.karabofelicia24.workers.dev/" aria-label="Visit live website" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></div><span class="project-status">Deployed</span></div>
+        <h3>Neuropulse Inc. Website</h3><div class="project-meta">In-house · the studio's own site and back office</div><p>The company website and admin platform: a project showcase with case studies, a three-step enquiry form, discovery-call booking with no double bookings, an instant estimate, and an admin dashboard with two-factor sign-in.</p>
+        <div class="project-tags"><span>Cloudflare Workers</span><span>D1</span><span>R2</span><span>JavaScript</span></div>
+      </div>
+    </article><article class="project-card is-neuropulse reveal" data-org="neuropulse" data-delay="1">
+      <div class="project-thumb has-image"><img src="assets/images/project-taskflow.png" alt="TaskFlow screenshot" loading="lazy"><span class="project-org org-neuropulse"><img src="assets/images/neuropulse/logo-icon.svg" alt="" width="16" height="16">Neuropulse Inc.</span></div>
+      <div class="project-body">
+        <div class="project-top"><div class="project-links"><a href="https://github.com/KARA3O/TaskFlow" aria-label="GitHub repository" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.69-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.05.78 2.13v3.16c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a><a href="https://taskflow-u2if.onrender.com/" aria-label="Visit live website" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></div><span class="project-status">Deployed</span></div>
+        <h3>TaskFlow</h3><div class="project-meta">In-house · Neuropulse's first product</div><p>TaskFlow is a self-contained Spring Boot task-management application. It serves its HTML, CSS, and JavaScript frontend from the same application that exposes the JSON API, and stores user and task data in PostgreSQL.</p>
+        <div class="project-tags"><span>Spring Boot</span><span>Java</span><span>PostgreSQL</span><span>JWT</span></div>
+      </div>
+    </article><article class="project-card reveal" data-org="internship" data-delay="2">
+      <div class="project-thumb has-image"><img src="assets/images/project-lvh.png" alt="LVH — Limpopo Varsity Hackathon screenshot" loading="lazy"><span class="project-org">ICEP Internship</span></div>
       <div class="project-body">
         <div class="project-top"><div class="project-links"><span class="project-private" aria-label="Private GitHub repository">🔒 Private</span><a href="https://lvh.icep.co.za/" aria-label="Visit live website" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></div><span class="project-status">Deployed</span></div>
         <h3>LVH — Limpopo Varsity Hackathon</h3><p>APPLICATION PORTAL FOR STUDENTS WHO WANT TO COMPETE IN HACKATHONS</p>
         <div class="project-tags"><span>Hackathon Platform</span><span>Web Application</span><span>Student Portal</span></div>
       </div>
-    </article><article class="project-card reveal" data-delay="2">
-      <div class="project-thumb has-image"><img src="assets/images/project-lecture-room.png" alt="Lecture-Room-Booking-Management-System screenshot"></div>
+    </article><article class="project-card reveal" data-org="internship" data-delay="3">
+      <div class="project-thumb has-image"><img src="assets/images/project-lecture-room.png" alt="Lecture-Room-Booking-Management-System screenshot" loading="lazy"><span class="project-org">ICEP Internship</span></div>
       <div class="project-body">
         <div class="project-top"><div class="project-links"><span class="project-private" aria-label="Private GitHub repository">🔒 Private</span><a href="https://lecture-room-booking-management-sys.vercel.app/" aria-label="Visit live website" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></div><span class="project-status">Deployed</span></div>
         <h3>Lecture-Room-Booking-Management-System</h3><p>A web application for booking lecture rooms at TUT. Students and lecturers can search for available rooms and make bookings. Admins can manage rooms, approve bookings, and view reports.</p>
         <div class="project-tags"><span>JavaScript</span><span>Node.js</span><span>PostgreSQL</span></div>
       </div>
-    </article><article class="project-card reveal" data-delay="1">
-      <div class="project-thumb has-image"><img src="assets/images/project-taskflow.png" alt="TaskFlow screenshot"></div>
-      <div class="project-body">
-        <div class="project-top"><div class="project-links"><a href="https://github.com/KARA3O/TaskFlow" aria-label="GitHub repository" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.69-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.05.78 2.13v3.16c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a><a href="https://taskflow-u2if.onrender.com/" aria-label="Visit live website" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></div><span class="project-status">Deployed</span></div>
-        <h3>TaskFlow</h3><p>TaskFlow is a self-contained Spring Boot task-management application. It serves its HTML, CSS, and JavaScript frontend from the same application that exposes the JSON API, and stores user and task data in PostgreSQL.</p>
-        <div class="project-tags"><span>Spring Boot</span><span>Java</span><span>PostgreSQL</span><span>JWT</span></div>
-      </div>
-    </article><article class="project-card reveal" data-delay="2">
-      <div class="project-thumb has-image"><img src="assets/images/project-valery.png" alt="Valery Boutique screenshot"></div>
+    </article><article class="project-card reveal" data-org="personal" data-delay="1">
+      <div class="project-thumb has-image"><img src="assets/images/project-valery.png" alt="Valery Boutique screenshot" loading="lazy"><span class="project-org">Personal</span></div>
       <div class="project-body">
         <div class="project-top"><div class="project-links"><a href="https://github.com/KARA3O/valery-boutique" aria-label="GitHub repository" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.69-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.05.78 2.13v3.16c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a></div><span class="project-status">Not deployed</span></div>
         <h3>Valery Boutique</h3><p>A modern, AI-powered web application for small business owners to manage sales, inventory, analytics, and gain intelligent business insights.</p>
         <div class="project-tags"><span>AI</span><span>JavaScript</span><span>Business Management</span></div>
       </div>
-    </article></div></div></section>
+    </article></div>
+</div></section>
   <footer>Designed &amp; built by <span class="gradient-text" style="font-weight:600;">KARA3O</span> © 2026</footer>
   <script src="js/particles.js"></script><script src="js/main.js"></script>
 </body>

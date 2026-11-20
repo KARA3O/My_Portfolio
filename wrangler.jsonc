@@ -1,0 +1,24 @@
+// Cloudflare config for the portfolio: a static-assets-only Worker (no server code).
+// Docs: https://developers.cloudflare.com/workers/static-assets/
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "kara3o-portfolio",
+  "compatibility_date": "2026-10-01",
+
+  // `npm run build` copies only the public site files (HTML, css/, js/, assets/) into dist/,
+  // so repo files such as package.json, README.md and .git are never uploaded.
+  // Wrangler runs it automatically before `wrangler dev` and `wrangler deploy`.
+  "build": { "command": "node scripts/build.mjs" },
+
+  "assets": {
+    "directory": "./dist",
+    // Unknown paths show the portfolio's own 404.html.
+    "not_found_handling": "404-page",
+    // /projects serves projects.html; /projects.html redirects to /projects.
+    "html_handling": "auto-trailing-slash"
+  },
+
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": true }
+}

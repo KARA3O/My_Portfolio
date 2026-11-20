@@ -103,6 +103,42 @@ if (contactForm) {
   });
 }
 
+/* ---------- Projects: filter by where each project was built ---------- */
+const filterBar = document.querySelector(".project-filters");
+if (filterBar) {
+  const cards = [...document.querySelectorAll(".projects-grid .project-card")];
+  const buttons = [...filterBar.querySelectorAll(".filter-btn")];
+
+  // Counts come from the cards themselves, so adding a card keeps them right
+  buttons.forEach((btn) => {
+    const f = btn.dataset.filter;
+    const n = f === "all" ? cards.length : cards.filter((c) => c.dataset.org === f).length;
+    const count = btn.querySelector(".count");
+    if (count) count.textContent = n;
+  });
+
+  const applyFilter = (f) => {
+    buttons.forEach((b) => {
+      const on = b.dataset.filter === f;
+      b.classList.toggle("active", on);
+      b.setAttribute("aria-pressed", on);
+    });
+    cards.forEach((c) => { c.hidden = f !== "all" && c.dataset.org !== f; });
+  };
+
+  buttons.forEach((b) => b.addEventListener("click", () => applyFilter(b.dataset.filter)));
+  document.querySelectorAll("[data-filter-jump]").forEach((el) =>
+    el.addEventListener("click", () => {
+      applyFilter(el.dataset.filterJump);
+      filterBar.scrollIntoView({ behavior: "smooth", block: "start" });
+    })
+  );
+
+  // projects.html#neuropulse (linked from Experience/About) opens with the Neuropulse filter on
+  if (location.hash === "#neuropulse") applyFilter("neuropulse");
+  addEventListener("hashchange", () => { if (location.hash === "#neuropulse") applyFilter("neuropulse"); });
+}
+
 /* ---------- Experience: timeline tabs ---------- */
 document.querySelectorAll(".timeline-item .tabs").forEach((tabs) => {
   const item = tabs.closest(".timeline-item");
