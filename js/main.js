@@ -51,7 +51,7 @@ document.querySelectorAll(".reveal").forEach((el) => revealObs.observe(el));
 const tw = document.getElementById("typewriter");
 if (tw) {
   // ✏️ CHANGE: the roles that rotate in the hero
-  const roles = ["Computer Science Graduate", "Full-Stack Developer", "Software Developer", "Problem Solver"];
+  const roles = ["Back End Developer", "Full-Stack Developer", "Software Developer", "Problem Solver"];
   let r = 0, c = 0, deleting = false;
   (function type() {
     const word = roles[r];

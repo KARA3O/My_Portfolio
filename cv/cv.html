@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+  Karabo Thindisa — CV source. Edit this file, then run `npm run cv`:
+    • assets/Karabo_Thindisa_CV.pdf      the public copy linked from the Résumé button
+    • cv/out/Karabo_Thindisa_CV_full.pdf for job applications (adds what is in cv/private.local.json)
+  <!--slot:name-->…<!--/slot--> blocks hold the public text; private.local.json replaces them in the full copy.
+  private.local.json holds other people's contact details, so it is git-ignored and never published.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Karabo Alfred Thindisa — CV</title>
+<style>
+  @page { size: A4; margin: 0; }
+  :root {
+    --navy: #1e3a5f;
+    --navy-ink: #1b2f4b;
+    --red: #c8102e;
+    --side-text: #ffffff;
+    --side-label: #a9bdd8;
+    --side-link: #9cc7ff;
+    --body: #1f2328;
+    --muted: #5a6472;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; color: var(--body); font-size: 8.7pt; line-height: 1.34; }
+  a { color: inherit; text-decoration: none; }
+  .page { width: 210mm; height: 297mm; display: grid; grid-template-columns: 68mm 1fr; overflow: hidden; }
+
+  /* ---------- Sidebar ---------- */
+  .side { background: var(--navy); color: var(--side-text); padding: 11mm 7.5mm 8mm 8.5mm; }
+  .photo { width: 36mm; height: 36mm; border-radius: 50%; overflow: hidden; margin: 0 auto 5mm; }
+  .photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block; }
+  .side h2 { font-size: 10.5pt; letter-spacing: 0.02em; text-transform: uppercase; padding-bottom: 1.6mm; margin: 4.2mm 0 2mm; border-bottom: 0.6pt solid rgba(255, 255, 255, 0.28); }
+  .side h2:first-of-type { margin-top: 0; }
+  .item { margin-bottom: 1.6mm; }
+  .label { display: block; font-size: 6.9pt; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--side-label); }
+  .value { font-size: 8.5pt; line-height: 1.32; }
+  .side a { color: var(--side-link); }
+  .url { overflow-wrap: anywhere; }
+
+  /* ---------- Main column ---------- */
+  .main { padding: 10mm 10mm 8mm 10mm; }
+  h1 { font-size: 24pt; line-height: 1.05; color: var(--navy-ink); letter-spacing: -0.01em; }
+  .title { font-size: 10.6pt; color: var(--red); margin-top: 1.6mm; }
+  .note { font-size: 7.8pt; font-style: italic; color: var(--muted); margin-top: 1mm; }
+  .main h2 { font-size: 11pt; color: var(--navy-ink); text-transform: uppercase; letter-spacing: 0.01em; padding-bottom: 1.1mm; border-bottom: 0.9pt solid var(--red); margin: 3.6mm 0 1.7mm; }
+  .main p { margin-bottom: 1mm; }
+  .role { font-size: 9.2pt; margin-top: 1.7mm; }
+  .role:first-of-type { margin-top: 0; }
+  .role strong { color: #111; }
+  .role .org { color: #34557e; }
+  .main a { color: #24548f; }
+  .meta { font-size: 8pt; font-style: italic; color: var(--muted); margin: 0.2mm 0 0.9mm; }
+  ul { padding-left: 4mm; margin-bottom: 0.4mm; }
+  li { margin-bottom: 0.4mm; padding-left: 0.6mm; }
+  li::marker { color: #333; }
+  .ref { margin-bottom: 1mm; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <aside class="side">
+    <div class="photo"><img src="../assets/images/profile-home.jpg" alt="Karabo Thindisa"></div>
+
+    <h2>Contact</h2>
+    <div class="item"><span class="label">Phone</span><span class="value">072 721 6200</span></div>
+    <div class="item"><span class="label">Email</span><span class="value"><a href="mailto:thindisakarabo77@gmail.com">thindisakarabo77@gmail.com</a></span></div>
+    <div class="item"><span class="label">Location</span><span class="value">Polokwane, Limpopo, South Africa</span></div>
+    <div class="item"><span class="label">Portfolio</span><span class="value url"><a href="https://kara3o-portfolio.karabofelicia24.workers.dev/">kara3o-portfolio.karabofelicia24<wbr>.workers.dev</a></span></div>
+    <div class="item"><span class="label">LinkedIn</span><span class="value"><a href="https://www.linkedin.com/in/karabo-thindisa-70b2662a2/">linkedin.com/in/karabo-thindisa</a></span></div>
+    <div class="item"><span class="label">GitHub</span><span class="value"><a href="https://github.com/KARA3O">github.com/KARA3O</a></span></div>
+
+    <h2>Live projects</h2>
+    <div class="item"><span class="label">NG Printers platform</span><span class="value">Client business platform · <a href="https://ng-printers.karabofelicia24.workers.dev/">View live site</a></span></div>
+    <div class="item"><span class="label">4Guard booking portal</span><span class="value">Client booking system · <a href="https://4guard-booking-portal.karabofelicia24.workers.dev/">View live site</a></span></div>
+    <div class="item"><span class="label">Neuropulse</span><span class="value">Studio site and admin · <a href="https://neuropulse-inc.karabofelicia24.workers.dev/">View live site</a></span></div>
+
+    <h2>Technical skills</h2>
+    <div class="item"><span class="label">Programming</span><span class="value">Java, Python, JavaScript, TypeScript, SQL</span></div>
+    <div class="item"><span class="label">Back end</span><span class="value">Spring Boot, Node.js, Express, REST APIs, JWT authentication</span></div>
+    <div class="item"><span class="label">Front end</span><span class="value">React, HTML, CSS</span></div>
+    <div class="item"><span class="label">Databases</span><span class="value">PostgreSQL, Cloudflare D1 (SQLite), Prisma, MongoDB</span></div>
+    <div class="item"><span class="label">Cloud and tools</span><span class="value">Cloudflare Workers and R2, Docker, Git and GitHub, Linux</span></div>
+
+    <h2>Soft skills</h2>
+    <div class="item"><span class="value">Problem solving, teamwork, communication, customer service, working under pressure</span></div>
+
+    <h2>Languages</h2>
+    <div class="item"><span class="value">English — Fluent<br>Sepedi — Home language</span></div>
+  </aside>
+
+  <main class="main">
+    <h1>Karabo Alfred Thindisa</h1>
+    <div class="title">Back End Developer | Final-Year Diploma in Computer Science Student</div>
+    <!--slot:note--><!--/slot-->
+
+    <h2>Profile</h2>
+    <p>Final-year Diploma in Computer Science student at Tshwane University of Technology with all academic modules completed, working as a Back End Developer at ICEP through Work Integrated Learning. Founder of Neuropulse, a software studio with three client and in-house systems live on Cloudflare. First place at the 5th Annual Limpopo Varsity Hackathon (2026). Seeking a graduate or junior software developer role.</p>
+
+    <h2>Work experience</h2>
+    <div class="role"><strong>Founder &amp; Software Developer</strong> <span class="org">— <a href="https://neuropulse-inc.karabofelicia24.workers.dev/">Neuropulse</a></span></div>
+    <div class="meta">Polokwane · Current</div>
+    <ul>
+      <li>Founded Neuropulse, a software studio that builds websites, booking systems and business platforms for South African clients</li>
+      <li>Built the <a href="https://ng-printers.karabofelicia24.workers.dev/">NG Printers</a> platform: online quotes with artwork uploads, a customer portal for order tracking, an admin dashboard for pricing and production, and a 3D map with live directions (React, TypeScript, Node.js, Prisma)</li>
+      <li>Delivered the <a href="https://4guard-booking-portal.karabofelicia24.workers.dev/">4Guard Booking Portal</a>, the first client project: service pages, customer accounts and online bookings</li>
+      <li>Built the studio's own website and admin platform (enquiries, call booking, two-factor sign-in) and TaskFlow, a Spring Boot and PostgreSQL task manager</li>
+      <li>Deploy and maintain these systems on Cloudflare Workers, D1 and R2, shipping updates to live systems while they stay in use</li>
+    </ul>
+
+    <div class="role"><strong>Back End Developer (Work Integrated Learning)</strong> <span class="org">— ICEP – Informatics Community Engagement Project</span></div>
+    <div class="meta">Tshwane University of Technology, Polokwane · 2026 – Present</div>
+    <ul>
+      <li>Contribute to the Limpopo Varsity Hackathon (LVH) application portal, where students apply to compete</li>
+      <li>Contribute to the Lecture Room Booking System, where students and lecturers book rooms at TUT and administrators approve bookings and run reports</li>
+      <li>Develop and maintain back-end services, APIs and databases with the wider team</li>
+    </ul>
+
+    <div class="role"><strong>Order Taker</strong> <span class="org">— McDonald's South Africa</span></div>
+    <div class="meta">Mokopane · October – December 2022</div>
+    <ul>
+      <li>Took orders and processed cash and card payments accurately at high volume</li>
+      <li>Resolved customer queries and worked with kitchen and service teams to meet speed and quality standards</li>
+    </ul>
+
+    <h2>Education</h2>
+    <div class="role"><strong>Diploma in Computer Science</strong></div>
+    <div class="meta">Tshwane University of Technology, Polokwane Campus · Final year, 2026</div>
+    <ul>
+      <li>All academic modules completed; completing Work Integrated Learning (WIL) at ICEP, based at TUT</li>
+    </ul>
+    <div class="role"><strong>National Senior Certificate (Grade 12) — Bachelor's Pass</strong></div>
+    <div class="meta">Ramogabudi Senior Secondary School, Mokopane, Limpopo · 2021</div>
+
+    <h2>Achievements</h2>
+    <div class="role"><strong>Winner — 5th Annual Limpopo Varsity Hackathon</strong></div>
+    <div class="meta">8 – 10 October 2026</div>
+    <ul>
+      <li>First place with a team that built a drone-based crop-monitoring and water-management solution, pitched to judges and partners</li>
+    </ul>
+
+    <h2>References</h2>
+    <!--slot:references--><p>Available on request.</p><!--/slot-->
+  </main>
+
+</div>
+</body>
+</html>

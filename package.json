@@ -12,7 +12,8 @@
     "build": "node scripts/build.mjs",
     "dev": "wrangler dev",
     "check": "wrangler deploy --dry-run",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "cv": "node cv/build.mjs"
   },
   "devDependencies": {
     "wrangler": "^4.152.0"
